@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+
+    <title>Orbiton</title>
+  </head>
+  <body>
+
+    <div class="jumbotron text-center" style="margin-bottom: 0; background-color: rgba(0, 0, 0, 0.5);">
+      <h1 id="titulo">Orbiton</h1>
+      <p id="subtitulo">Seja bem-vindo ao desconhecido!</p>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+
+      <!-- a <a class="navbar-brand" href="#">Orbiton</a>-->
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse"></div>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Links</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- CALENDÁRIO -->
+    <div class="card-group p-2">
+      <div class="card m-2">
+        <div class="zoom">
+          <img class="card-img-top" src="img/background.jpg" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">JAN</h5>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoJAN">Viajar</button>
+        </div>
+      </div>
+      <div class="card m-2">
+        <div class="zoom">
+          <img class="card-img-top" src="img/background.jpg" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">FEV</h5>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoFEV">Viajar</button>
+        </div>
+      </div>
+      <div class="card m-2">
+        <div class="zoom">
+          <img class="card-img-top" src="img/background.jpg" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">MAR</h5>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoMAR">Viajar</button>
+        </div>
+      </div>
+      <div class="card m-2">
+        <div class="zoom">
+          <img class="card-img-top" src="img/background.jpg" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">ABR</h5>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoABR">Viajar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-group p-2">
+      <div class="card m-2">
+        <div class="zoom">
+          <img class="card-img-top" src="img/background.jpg" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">MAI</h5>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoMAI">Viajar</button>
+        </div>
+      </div>
+      <div class="card m-2">
+        <div class="zoom">
+          <img class="card-img-top" src="img/background.jpg" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">JUN</h5>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoJUN">Viajar</button>
+        </div>
+      </div>
+      <div class="card m-2">
+        <div class="zoom">
+          <img class="card-img-top" src="img/background.jpg" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">JUL</h5>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoJUL">Viajar</button>
+        </div>
+      </div>
+      <div class="card m-2">
+        <div class="zoom">
+          <img class="card-img-top" src="img/background.jpg" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">AGO</h5>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoAGO">Viajar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-group p-2">
+      <div class="card m-2">
+        <div class="zoom">
+          <img class="card-img-top" src="img/background.jpg" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">SET</h5>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoSET">Viajar</button>
+        </div>
+      </div>
+      <div class="card m-2">
+        <div class="zoom">
+          <img class="card-img-top" src="img/background.jpg" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">OUT</h5>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoOUT">Viajar</button>
+        </div>
+      </div>
+      <div class="card m-2">
+        <div class="zoom">
+          <img class="card-img-top" src="img/background.jpg" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">NOV</h5>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoNOV">Viajar</button>
+        </div>
+      </div>
+      <div class="card m-2">
+        <div class="zoom">
+          <img class="card-img-top" src="img/background.jpg" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">DEZ</h5>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoDEZ">Viajar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer mt-auto text-center py-3">
+      <div class="container">
+        <span class="text-muted">Feito por Davi Soares Moraes, todos os direitos reservados. ©</span>
+      </div>
+    </footer>
+
+    <!-- MODAL'S -->
+
+    <!-- Janeiro -->
+    <div class="modal fade" id="ExemploModalCentralizadoJAN" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="TituloModalCentralizado">Janeiro</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fevereiro -->
+    <div class="modal fade" id="ExemploModalCentralizadoFEV" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="TituloModalCentralizado">Fevereiro</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Março -->
+    <div class="modal fade" id="ExemploModalCentralizadoMAR" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="TituloModalCentralizado">Março</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Abril -->
+    <div class="modal fade" id="ExemploModalCentralizadoABR" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="TituloModalCentralizado">Abril</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Maio -->
+    <div class="modal fade" id="ExemploModalCentralizadoMAI" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="TituloModalCentralizado">Maio</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Junho -->
+    <div class="modal fade" id="ExemploModalCentralizadoJUN" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="TituloModalCentralizado">Junho</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Julho -->
+    <div class="modal fade" id="ExemploModalCentralizadoJUL" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="TituloModalCentralizado">Julho</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Agosto -->
+    <div class="modal fade" id="ExemploModalCentralizadoAGO" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="TituloModalCentralizado">Agosto</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Setembro -->
+    <div class="modal fade" id="ExemploModalCentralizadoSET" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="TituloModalCentralizado">Setembro</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Outubro -->
+    <div class="modal fade" id="ExemploModalCentralizadoOUT" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="TituloModalCentralizado">Outubro</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Novembro -->
+    <div class="modal fade" id="ExemploModalCentralizadoNOV" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="TituloModalCentralizado">Novembro</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dezembro -->
+    <div class="modal fade" id="ExemploModalCentralizadoDEZ" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="TituloModalCentralizado">Dezembro</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

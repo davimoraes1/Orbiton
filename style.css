@@ -72,6 +72,20 @@ img{
   background-color: rgba(64, 64, 64, 0.3);
 }
 
+#cardCal{
+  border-radius: 10px !important;
+}
+
+#imgCal{
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#zoomCal{
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
 /* FOOTER */
 .footer.mt-auto.py-3{
   background-color: rgba(0, 0, 0, 0.5);
@@ -111,5 +125,24 @@ img{
 }
 
 .modal-content{
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*SOBRE*/
+#cardSobre{
+  border-radius: 10px !important;
+}
+
+#imgSobre{
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#zoomSobre{
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.card-text{
+  color: grey;
 }

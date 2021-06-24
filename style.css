@@ -1,8 +1,11 @@
 body{
   background: url('img/background.jpg') center center no-repeat fixed;
-  -webkit-background-size: cover;
+  /* center center no-repeat fixed*/
+  /* -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
+  -o-background-size: cover; */
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
   height: auto;

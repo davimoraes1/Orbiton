@@ -14,8 +14,9 @@ body{
   height: 100vh;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
+  object-fit: cover;
 }
 
 iframe{

@@ -6,7 +6,20 @@ body{
   background-size: cover;
 }
 
+iframe{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* TEXTOS */
+#legenda{
+  color: #999999 !important;
+  font-weight: lighter !important;
+  font-style: italic !important;
+  text-align: center !important;
+}
+
 #titulo{
   color: white;
   font-weight: bold;
@@ -63,17 +76,23 @@ img{
 }
 
 .btn.btn-primary{
-  color: grey;
-  background-color: rgba(38, 38, 38, 0.3);
+  color: #d9d9d9 !important;
+  background-color: rgba(38, 38, 38, 0.7) !important;
 }
 
 .btn.btn-primary:hover{
-  color: white;
-  background-color: rgba(64, 64, 64, 0.3);
+  color: white !important;
+  background-color: rgba(64, 64, 64, 0.7) !important;
 }
+
 
 #cardCal{
   border-radius: 10px !important;
+}
+
+#cardCal:hover{
+  box-shadow: 1px 1px 15px #888888;
+  transition: 0.4s;
 }
 
 #imgCal{
@@ -91,6 +110,10 @@ img{
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+#lastLine{
+  margin-bottom: 80px;
+}
+
 .text-muted{
   font-weight: lighter;
   font-style: italic;
@@ -103,6 +126,7 @@ img{
 
 .modal-body{
   color: white;
+
 }
 
 .close{
@@ -128,14 +152,33 @@ img{
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+#footi{
+  margin-top: -65px !important;
+}
+
+
 /*SOBRE*/
+#icones{
+  border-radius: 10px !important;
+}
+
 #cardSobre{
   border-radius: 10px !important;
 }
 
+#cardSobre:hover{
+  box-shadow: 1px 1px 15px #888888;
+  transition: 0.4s;
+}
+
+
 #imgSobre{
+  align-items: center;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  height: 75vh;
+  width: 100%;
+  object-fit: cover;
 }
 
 #zoomSobre{
@@ -145,4 +188,38 @@ img{
 
 .card-text{
   color: grey;
+}
+
+/*REFERÊNCIAS*/
+#credito{
+  color: white;
+  font-weight: lighter;
+  font-style: italic;
+  text-shadow: 2px 2px 3px #000000;
+  text-decoration: none;
+}
+
+#credito:hover{
+  color: grey;
+  transition: 0.4s;
+}
+
+.d-block.w-100.img-fluid{
+  border-radius: 10px;
+  height: 75vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-inner:hover{
+  border-radius: 10px;
+}
+
+.carousel-inner:hover{
+  box-shadow: 1px 1px 15px #888888;
+  transition: 0.4s;
+}
+
+h5{
+  text-shadow: 2px 2px 3px #000000;
 }

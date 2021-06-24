@@ -1,0 +1,10 @@
+[SEGUNDA REUNIÃO]
+
+- Tirar o botão
+- Deixar o card clicável
+- Hover no card (brilho em volta)
+- Pequenas descrições no card
+- Hover e active
+- Arrumar os id's
+
+[TERCEIRA REUNIÃO]

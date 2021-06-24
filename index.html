@@ -3,177 +3,211 @@
   <head>
     <meta charset="utf-8">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="shortcut icon" href="img/saturn1.png" />
 
     <title>Orbiton - Home</title>
   </head>
   <body>
 
-    <div class="jumbotron text-center" style="margin-bottom: 0; background-color: rgba(0, 0, 0, 0.5);">
-      <h1 id="titulo">🌌 Orbiton</h1>
-      <p id="subtitulo">Seja bem-vindo ao desconhecido!</p>
-    </div>
+      <div class="jumbotron text-center" style="margin-bottom: 0; background-color: rgba(0, 0, 0, 0.5);">
+        <h1 id="titulo"><ion-icon name="planet"></ion-icon> Orbiton</h1>
+        <p id="subtitulo">Seja bem-vindo ao desconhecido!</p>
+      </div>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark" style="box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;">
 
-      <!-- a <a class="navbar-brand" href="#">Orbiton</a>-->
+        <!-- a <a class="navbar-brand" href="#">Orbiton</a>-->
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse"></div>
+        <div class="collapse navbar-collapse"></div>
 
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">🏠 Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sobre.html">🎓 Sobre</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">🔗 Links</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><ion-icon name="home"></ion-icon> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html"><ion-icon name="people"></ion-icon> Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="referencias.html"><ion-icon name="earth"></ion-icon> Referências</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-    <!-- CALENDÁRIO -->
-    <div class="card-group p-2">
-      <div id="cardCal" class="card m-2">
-        <div id="zoomCal" class="zoom">
-          <img id="imgCal" class="card-img-top" src="img/background.jpg" alt="Card image cap">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">JAN</h5>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoJAN">Viajar</button>
-        </div>
-      </div>
-      <div id="cardCal" class="card m-2">
-        <div id="zoomCal" class="zoom">
-          <img id="imgCal" class="card-img-top" src="img/background.jpg" alt="Card image cap">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">FEV</h5>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoFEV">Viajar</button>
-        </div>
-      </div>
-      <div id="cardCal" class="card m-2">
-        <div id="zoomCal" class="zoom">
-          <img id="imgCal" class="card-img-top" src="img/background.jpg" alt="Card image cap">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">MAR</h5>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoMAR">Viajar</button>
-        </div>
-      </div>
-      <div id="cardCal" class="card m-2">
-        <div id="zoomCal" class="zoom">
-          <img id="imgCal" class="card-img-top" src="img/background.jpg" alt="Card image cap">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">ABR</h5>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoABR">Viajar</button>
-        </div>
-      </div>
-    </div>
+      <!-- CALENDÁRIO -->
 
-    <div class="card-group p-2">
-      <div id="cardCal" class="card m-2">
-        <div id="zoomCal" class="zoom">
-          <img id="imgCal" class="card-img-top" src="img/background.jpg" alt="Card image cap">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">MAI</h5>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoMAI">Viajar</button>
-        </div>
-      </div>
-      <div id="cardCal" class="card m-2">
-        <div id="zoomCal" class="zoom">
-          <img id="imgCal" class="card-img-top" src="img/background.jpg" alt="Card image cap">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">JUN</h5>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoJUN">Viajar</button>
-        </div>
-      </div>
-      <div id="cardCal" class="card m-2">
-        <div id="zoomCal" class="zoom">
-          <img id="imgCal" class="card-img-top" src="img/background.jpg" alt="Card image cap">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">JUL</h5>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoJUL">Viajar</button>
-        </div>
-      </div>
-      <div id="cardCal" class="card m-2">
-        <div id="zoomCal" class="zoom">
-          <img id="imgCal" class="card-img-top" src="img/background.jpg" alt="Card image cap">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">AGO</h5>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoAGO">Viajar</button>
-        </div>
-      </div>
-    </div>
+      <div class="card-group pt-3">
 
-    <div class="card-group p-2">
-      <div id="cardCal" class="card m-2">
-        <div id="zoomCal" class="zoom">
-          <img id="imgCal" class="card-img-top" src="img/background.jpg" alt="Card image cap">
+        <div id="cardCal" class="card m-2" data-toggle="modal" data-target="#ExemploModalCentralizadoJAN">
+          <div id="zoomCal" class="zoom">
+            <a href="https://www.youtube.com/embed/JYU0Efdb9D8?rel=0&amp;wmode=transparent&showinfo=1&modestbranding=1&autoplay=1&mute=1"> <img id="imgCal" class="card-img-top" src="img/big bang.png" alt="Card image cap"></a>
+            <!-- <iframe title="YouTube" width="100%" src="https://www.youtube.com/embed/JYU0Efdb9D8?rel=0&amp;wmode=transparent&showinfo=1&modestbranding=1" frameborder="0" allowfullscreen="1"></iframe> -->
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">JAN</h5>
+            <p id="legenda" class="card-text">O início de tudo!</p>
+          </div>
         </div>
-        <div class="card-body">
-          <h5 class="card-title">SET</h5>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoSET">Viajar</button>
+
+        <div id="cardCal" class="card m-2" data-toggle="modal" data-target="#ExemploModalCentralizadoFEV">
+          <div id="zoomCal" class="zoom">
+            <a href="https://www.youtube.com/embed/0NZ_XHnIu54?rel=0&amp;wmode=transparent&showinfo=1&modestbranding=1&autoplay=1"> <img id="imgCal" class="card-img-top" src="img/sun.jpg" alt="Card image cap"></a>
+            <!-- <iframe title="YouTube" width="100%" src="https://www.youtube.com/embed/0NZ_XHnIu54?rel=0&amp;wmode=transparent&showinfo=1&modestbranding=1" frameborder="0" allowfullscreen="1"></iframe> -->
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">FEV</h5>
+            <p id="legenda" class="card-text">Venha conhecer um pouco sobre estrelas!</p>
+          </div>
+        </div>
+
+        <div id="cardCal" class="card m-2" data-toggle="modal" data-target="#ExemploModalCentralizadoMAR">
+          <div id="zoomCal" class="zoom">
+            <a href="https://www.youtube.com/embed/T85SY_aSWu8?rel=0&amp;wmode=transparent&showinfo=1&modestbranding=1&autoplay=1"> <img id="imgCal" class="card-img-top" src="img/horse.jpg" alt="Card image cap"></a>
+            <!-- <iframe title="YouTube" width="100%" src="https://www.youtube.com/embed/T85SY_aSWu8?rel=0&amp;wmode=transparent&showinfo=1&modestbranding=1" frameborder="0" allowfullscreen="1"></iframe> -->
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">MAR</h5>
+            <p id="legenda" class="card-text">Pronto para conhecer as nebulosas?</p>
+          </div>
+        </div>
+
+        <div id="cardCal" class="card m-2" data-toggle="modal" data-target="#ExemploModalCentralizadoABR">
+          <div id="zoomCal" class="zoom">
+            <a href="https://www.youtube.com/embed/hEJ9CjzI7HE?rel=0&amp;wmode=transparent&showinfo=1&modestbranding=1&autoplay=1"> <img id="imgCal" class="card-img-top" src="img/vialactea.jpg" alt="Card image cap"></a>
+            <!-- <iframe title="YouTube" width="100%" src="https://www.youtube.com/embed/hEJ9CjzI7HE?rel=0&amp;wmode=transparent&showinfo=1&modestbranding=1" frameborder="0" allowfullscreen="1"></iframe> -->
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">ABR</h5>
+            <p id="legenda" class="card-text">A galáxias podem ser muito interessantes...</p>
+          </div>
         </div>
       </div>
-      <div id="cardCal" class="card m-2">
-        <div id="zoomCal" class="zoom">
-          <img id="imgCal" class="card-img-top" src="img/background.jpg" alt="Card image cap">
+
+      <div class="card-group pt-2">
+
+        <div id="cardCal" class="card m-2" data-toggle="modal" data-target="#ExemploModalCentralizadoMAI">
+          <div id="zoomCal" class="zoom">
+            <a href="https://www.youtube.com/embed/yueKVuDC07M?rel=0&amp;wmode=transparent&showinfo=1&modestbranding=1&autoplay=1"> <img id="imgCal" class="card-img-top" src="img/relatividade.png" alt="Card image cap"></a>
+            <!-- <iframe title="YouTube" width="100%" src="https://www.youtube.com/embed/yueKVuDC07M?rel=0&amp;wmode=transparent&showinfo=1&modestbranding=1" frameborder="0" allowfullscreen="1"></iframe> -->
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">MAI</h5>
+            <p id="legenda" class="card-text">Como medimos distâncias interestelares?</p>
+          </div>
         </div>
-        <div class="card-body">
-          <h5 class="card-title">OUT</h5>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoOUT">Viajar</button>
+
+        <div id="cardCal" class="card m-2" data-toggle="modal" data-target="#ExemploModalCentralizadoJUN">
+          <div id="zoomCal" class="zoom">
+            <a href="https://www.youtube.com/embed/E8TRwYczfdI?rel=0&amp;wmode=transparent&showinfo=1&modestbranding=1&autoplay=1"> <img id="imgCal" class="card-img-top" src="img/saturno.jpg" alt="Card image cap"></a>
+            <!-- <iframe title="YouTube" width="100%" src="https://www.youtube.com/embed/E8TRwYczfdI?rel=0&amp;wmode=transparent&showinfo=1&modestbranding=1" frameborder="0" allowfullscreen="1"></iframe> -->
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">JUN</h5>
+            <p id="legenda" class="card-text">Os planetas são muito misteriosos!</p>
+          </div>
+        </div>
+
+        <div id="cardCal" class="card m-2" data-toggle="modal" data-target="#ExemploModalCentralizadoJUL">
+          <div id="zoomCal" class="zoom">
+            <a href="https://www.youtube.com/embed/Gm1_f3mlp5g?rel=0&amp;wmode=transparent&showinfo=1&modestbranding=1&autoplay=1"> <img id="imgCal" class="card-img-top" src="img/shooting.jpg" alt="Card image cap"></a>
+            <!-- <iframe title="YouTube" width="100%" src="https://www.youtube.com/embed/Gm1_f3mlp5g?rel=0&amp;wmode=transparent&showinfo=1&modestbranding=1" frameborder="0" allowfullscreen="1"></iframe> -->
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">JUL</h5>
+            <p id="legenda" class="card-text">Estrelas cadentes não são o que parecem...</p>
+          </div>
+        </div>
+
+        <div id="cardCal" class="card m-2" data-toggle="modal" data-target="#ExemploModalCentralizadoAGO">
+          <div id="zoomCal" class="zoom">
+            <a href="https://www.youtube.com/embed/rLvIng0Nwec?rel=0&amp;wmode=transparent&showinfo=1&modestbranding=1&autoplay=1"> <img id="imgCal" class="card-img-top" src="img/solarsystem.jpg" alt="Card image cap"></a>
+            <!-- <iframe title="YouTube" width="100%" src="https://www.youtube.com/embed/rLvIng0Nwec?rel=0&amp;wmode=transparent&showinfo=1&modestbranding=1" frameborder="0" allowfullscreen="1"></iframe> -->
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">AGO</h5>
+            <p id="legenda" class="card-text">Venha conhecer a sua rua!</p>
+          </div>
         </div>
       </div>
-      <div id="cardCal" class="card m-2">
-        <div id="zoomCal" class="zoom">
-          <img id="imgCal" class="card-img-top" src="img/background.jpg" alt="Card image cap">
+
+      <div id="lastLine" class="card-group pt-2">
+
+        <div id="cardCal" class="card m-2" data-toggle="modal" data-target="#ExemploModalCentralizadoSET">
+          <div id="zoomCal" class="zoom">
+            <a href="https://www.youtube.com/embed/80n16dAguUQ?rel=0&amp;wmode=transparent&showinfo=1&modestbranding=1&autoplay=1"> <img id="imgCal" class="card-img-top" src="img/earth.jpg" alt="Card image cap"></a>
+            <!-- <iframe title="YouTube" width="100%" src="https://www.youtube.com/embed/80n16dAguUQ?rel=0&amp;wmode=transparent&showinfo=1&modestbranding=1" frameborder="0" allowfullscreen="1"></iframe> -->
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">SET</h5>
+            <p id="legenda" class="card-text">Agora, conheça a sua casa!</p>
+          </div>
         </div>
-        <div class="card-body">
-          <h5 class="card-title">NOV</h5>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoNOV">Viajar</button>
+
+        <div id="cardCal" class="card m-2" data-toggle="modal" data-target="#ExemploModalCentralizadoOUT">
+          <div id="zoomCal" class="zoom">
+            <a href="https://www.youtube.com/embed/_8IdY3I5U8A?rel=0&amp;wmode=transparent&showinfo=1&modestbranding=1&autoplay=1"> <img id="imgCal" class="card-img-top" src="img/tardigrade.jpg" alt="Card image cap"></a>
+            <!-- <iframe title="YouTube" width="100%" src="https://www.youtube.com/embed/_8IdY3I5U8A?rel=0&amp;wmode=transparent&showinfo=1&modestbranding=1" frameborder="0" allowfullscreen="1"></iframe> -->
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">OUT</h5>
+            <p id="legenda" class="card-text">Temos vida!</p>
+          </div>
+        </div>
+
+        <div id="cardCal" class="card m-2" data-toggle="modal" data-target="#ExemploModalCentralizadoNOV">
+          <div id="zoomCal" class="zoom">
+            <img id="imgCal" class="card-img-top" src="img/background.jpg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">NOV</h5>
+            <p id="legenda" class="card-text">Lorem ipsum.</p>
+          </div>
+        </div>
+
+        <div id="cardCal" class="card m-2" data-toggle="modal" data-target="#ExemploModalCentralizadoDEZ">
+          <div id="zoomCal" class="zoom">
+            <img id="imgCal" class="card-img-top" src="img/background.jpg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">DEZ</h5>
+            <p id="legenda" class="card-text">Lorem ipsum.</p>
+          </div>
         </div>
       </div>
-      <div id="cardCal" class="card m-2">
-        <div id="zoomCal" class="zoom">
-          <img id="imgCal" class="card-img-top" src="img/background.jpg" alt="Card image cap">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">DEZ</h5>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizadoDEZ">Viajar</button>
-        </div>
-      </div>
-    </div>
+
+
 
     <!-- FOOTER -->
-    <footer class="footer mt-auto text-center py-3">
-      <div class="container">
-        <span class="text-muted">Feito por Davi Soares Moraes, todos os direitos reservados. ©</span>
+      <footer id="footi" class="text-center text-lg-start">
+      <div class="content">
+        <div class="p-3 text-muted" style="background-color: rgba(0, 0, 0, 0.5);">
+          © 2020 Copyright:
+          <a class="text-muted">Feito por Davi Soares Moraes.</a>
+        </div>
       </div>
     </footer>
+
+
 
     <!-- MODAL'S -->
 
     <!-- Janeiro -->
-    <div class="modal fade" id="ExemploModalCentralizadoJAN" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <!-- <div class="modal fade" id="ExemploModalCentralizadoJAN" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -183,17 +217,17 @@
             </button>
           </div>
           <div class="modal-body">
-            ...
+            <iframe title="YouTube" width="400" height="300" src="https://www.youtube.com/embed/E8TRwYczfdI?rel=0&amp;wmode=transparent" frameborder="0" allowfullscreen="1"></iframe>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Fevereiro -->
-    <div class="modal fade" id="ExemploModalCentralizadoFEV" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <!-- <div class="modal fade" id="ExemploModalCentralizadoFEV" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -210,10 +244,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Março -->
-    <div class="modal fade" id="ExemploModalCentralizadoMAR" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <!-- <div class="modal fade" id="ExemploModalCentralizadoMAR" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -230,10 +264,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Abril -->
-    <div class="modal fade" id="ExemploModalCentralizadoABR" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <!-- <div class="modal fade" id="ExemploModalCentralizadoABR" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -250,10 +284,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Maio -->
-    <div class="modal fade" id="ExemploModalCentralizadoMAI" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <!-- <div class="modal fade" id="ExemploModalCentralizadoMAI" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -270,10 +304,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Junho -->
-    <div class="modal fade" id="ExemploModalCentralizadoJUN" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <!-- <div class="modal fade" id="ExemploModalCentralizadoJUN" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -290,10 +324,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Julho -->
-    <div class="modal fade" id="ExemploModalCentralizadoJUL" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <!-- <div class="modal fade" id="ExemploModalCentralizadoJUL" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -310,10 +344,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Agosto -->
-    <div class="modal fade" id="ExemploModalCentralizadoAGO" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <!-- <div class="modal fade" id="ExemploModalCentralizadoAGO" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -330,10 +364,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Setembro -->
-    <div class="modal fade" id="ExemploModalCentralizadoSET" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <!-- <div class="modal fade" id="ExemploModalCentralizadoSET" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -350,10 +384,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Outubro -->
-    <div class="modal fade" id="ExemploModalCentralizadoOUT" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <!-- <div class="modal fade" id="ExemploModalCentralizadoOUT" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -370,10 +404,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Novembro -->
-    <div class="modal fade" id="ExemploModalCentralizadoNOV" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <!-- <div class="modal fade" id="ExemploModalCentralizadoNOV" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -390,10 +424,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Dezembro -->
-    <div class="modal fade" id="ExemploModalCentralizadoDEZ" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <!-- <div class="modal fade" id="ExemploModalCentralizadoDEZ" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -410,6 +444,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>

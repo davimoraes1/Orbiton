@@ -27,7 +27,7 @@ iframe{
   margin-left: auto;
   margin-right: auto;
   width: 100% !important;
-  height: auto !important;
+  height: 50vh !important;
 }
 
 /* TEXTOS */

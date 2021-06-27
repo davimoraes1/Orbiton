@@ -138,6 +138,15 @@ img{
   font-style: italic;
 }
 
+#textFooti{
+  text-decoration: none;
+}
+
+#textFooti:hover{
+  color: #cccccc !important;
+  transition: 0.4s;
+}
+
 /* MODAL */
 #TituloModalCentralizado{
   color: white;
